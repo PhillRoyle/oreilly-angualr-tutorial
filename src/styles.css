@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+  padding: 26px;
+  background-color: orangered;
+  color: deepskyblue;
+  border-radius: 18px;
+  font-size: 55px;
+}

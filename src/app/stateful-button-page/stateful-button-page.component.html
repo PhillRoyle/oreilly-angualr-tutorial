@@ -1,0 +1,9 @@
+<!--copied this from `app-component.html`as routing points here now - THIS is now the parent-->
+
+<!--now that we've shared state into parent component (this one), it can be used by the conditional statement here.
+we _could_ pass the count &/or 'appear threshold' into this component, and have the `app-congrats-message-component`
+ decide when it appears or not, rather than define it in here.....-->
+<app-congrats-message-component *ngIf="buttonCount >= 5"></app-congrats-message-component>
+<!--note '[]', and `()` buttonClicked-->
+<app-stateful-button *ngIf="showCounterButton" [buttonCount]="buttonCount" (buttonClicked)="incrementCount()"></app-stateful-button>
+<button (click)="toggleCounterButton()">Toggle the stateful button</button>

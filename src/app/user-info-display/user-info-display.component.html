@@ -1,0 +1,8 @@
+<!--added 'isLoading' because we tried to render this _before_ the subscribe finished. Still printed on page, but
+caused errors in console. Seems like a crappy way to manage async code... -->
+<div *ngIf="!isLoading">
+  <h3>I got some user's data. Woo.</h3>
+  <p>name = {{myUserInfo.name}}</p>
+<!--  <p>name = {{myUserInfo.name.first}} {{myUserInfo.name.last}}</p>-->
+  <p>email = {{myUserInfo.email}}</p>
+</div>

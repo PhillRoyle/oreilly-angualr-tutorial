@@ -1,0 +1,10 @@
+<h2>Event handling button</h2>
+<!--normal html syntax-->
+<!--<button onClick="">Click me</button>-->
+
+<!--angular uses this syntax - call to fn-->
+
+<!--It's just a function call, so it can take args as normal. And they can make use of the underlying class too-->
+<button (click)="doSomething()">Click me 1</button>
+<button (click)="doSomething(message1)">Click me 1a</button>
+<button (click)="doAnotherThing('Phill Said \'hi\'')">Click me 2</button>

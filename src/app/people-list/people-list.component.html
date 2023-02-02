@@ -1,0 +1,9 @@
+<h1>----- these are "people-list" components ------</h1>
+
+<div *ngIf="showList">
+  <div *ngFor="let person of people">
+    <h3>{{person.name}}</h3>
+    <p>age is {{person.age}}</p>
+    <p>they have {{person.hairColour}} hair</p>
+  </div>
+</div>

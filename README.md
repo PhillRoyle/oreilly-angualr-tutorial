@@ -176,8 +176,3 @@ Nice. Whenever you need to change colour, just change in 1 place. All good.
 **Composition** is the opposite. Directly uses the Button component. In the `DangerButton` component's html, simply use 
 `<app-button-component text="Danger" bgColor="red"></app-button-component>`. Still have a single place to change colours, but no need to inherit etc...
 
-git init -b main  
-git remote add origin git@github.com:PhillRoyle/oreilly-angualr-tutorial.git
-git branch -M main
-git add . && git commit -m "initial commit"
-git push -u origin main
